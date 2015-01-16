@@ -3,15 +3,49 @@
     <head>
         <title>Facts About You</title>
         <style>
-            /* Fill me in */
+            body {
+                font-family: sans-serif;
+                font-size: 16px;
+                color: #1C1C1C;
+                background: #ECF6CE;
+            }
+
+            ol {
+                padding: 20px;
+                margin: 0;
+            }
+            h1 {
+                color: #86B404;
+            }
+
+            .question {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .answer {
+                font-style: italic;
+                font-weight: normal;
+            }
+
+            .answer img {
+                width: 20px;
+                height: 20px;
+            }
+
         </style>
     </head>
     <body>
-        <h1>Facts About You</h1>
+        <h1>Facts</h1>
+        <h1>About</h1>
+        <h1>You</h1>
+        <input type="text" id="ageInput" placeholder="Enter your age..." />
         <ol>
-            <li>Days you have lived: <span id="daysAnswer"></span></li>
-            <li>Times your heart has beaten: <span id="heartbeatAnswer"></span></li>
-            <li>Gallons of water consumed: <span id="waterAnswer"></span></li>
+            <li class="question">Days you have lived: <span class="answer"><img src="sunrise.jpg" /> &times; <span id="daysAnswer"></span></span></li>
+            <li class="question">Times your heart has beaten: <span class="answer"><img src="heart.jpg" /> &times; <span id="heartbeatAnswer"></span></span></li>
+            <li class="question">Gallons of water consumed: <span class="answer"><img src="drop.jpg" /> &times; <span id="waterAnswer"></span></span></li>
+            <li class="question">Bowls of cereal eaten: <span class="answer"><img src="cereal.jpg" /> &times; <span id="cerealAnswer"></span></span></li>
+            <li class="question">Hours worked after college: <span class="answer"><img src="work.jpg" /> &times; <span id="workAnswer"></span></span></li>
         </ol>
         <script src="main.js" type="text/javascript"></script>
     </body>
